@@ -23,9 +23,9 @@
     display:flex;
     justify-content:space-around;
    }
-   /* /* .sm\:hidden {
+    .sm\:hidden {
         display: none;
-    } */
+    } 
      
 
 </style>
@@ -60,6 +60,7 @@
         </div>
 
       <div class="space-x-3 sm:hidden lg:flex">
+      <i class="fa-regular fa-bell "></i>
       <i class="fa-solid fa-magnifying-glass"></i>
       <button class="btn-1 rounded-lg p-2 p-3 text-black border border-yellow-500">login</button>
       <button class=" bg-yellow-400 rounded-lg p-2 p-3 text-black">Register</button>
@@ -85,9 +86,9 @@
       <main>
       <section class="mx-auto w-10/12">
         <h1 class="font-bold text-xl mt-10 mb-5">Browse By Categories</h1>
-        <div class="lg:flex gap-5 md:grid grid-cols-2 sm:">
+        <div class="grid grid-cols-1 lg:flex gap-5">
                   <!-- card-1 -->
-            <div class=" bg-yellow-200 rounded-lg p-7 text-center">
+            <div class=" bg-yellow-200 rounded-lg p-8 text-center">
               <div class="avatar">
                 <div class="w-24  bg-white rounded-full p-2">
                   <img src="c1-assets/dog-cartoon.png"/>
@@ -98,7 +99,7 @@
             <p>3 items</p>
           </div>
             <!-- card-2 -->
-            <div class=" bg-yellow-200 rounded-lg p-7 text-center">
+            <div class=" bg-yellow-200 rounded-lg p-8 text-center">
               <div class="avatar">
                 <div class="w-24  bg-white rounded-full p-2">
                   <img src="c1-assets/fish-cartoon.png"/>
@@ -110,7 +111,7 @@
           </div>
 
             <!-- card-3 -->
-            <div class=" bg-yellow-200 rounded-lg p-7 text-center">
+            <div class=" bg-yellow-200 rounded-lg p-8 text-center">
               <div class="avatar">
                 <div class="w-24  bg-white rounded-full p-2">
                   <img src="c1-assets/cat-cartoon.png"/>
@@ -122,7 +123,7 @@
           </div>
 
             <!-- card-4 -->
-            <div class=" bg-yellow-200 rounded-lg p-7 text-center">
+            <div class=" bg-yellow-200 rounded-lg p-8 text-center">
               <div class="avatar">
                 <div class="w-24  bg-white rounded-full p-2">
                   <img src="c1-assets/bird-cartoon.png"/>
@@ -134,7 +135,7 @@
           </div>
 
             <!-- card-5 -->
-            <div class=" bg-yellow-200 rounded-lg p-7 text-center">
+            <div class=" bg-yellow-200 rounded-lg p-8 text-center">
               <div class="avatar">
                 <div class="w-24  bg-white rounded-full p-2">
                   <img src="c1-assets/mouse-cartoon.png"/>
@@ -146,7 +147,7 @@
           </div>
 
             <!-- card-6 -->
-            <div class=" bg-yellow-200 rounded-lg p-7 text-center">
+            <div class=" bg-yellow-200 rounded-lg p-8 text-center">
               <div class="avatar">
                 <div class="w-24  bg-white rounded-full p-2">
                   <img src="c1-assets/rabbit-cartoon.png"/>
@@ -160,8 +161,9 @@
         </section>
                        
          <!-- products -->
-          <section class="bg-pink-100 mt-10">
-            <div class="mx-auto w-10/12">
+            
+          <section class ="lg:bg-pink-100 mt-10 lg:h-[500px]">
+            <div class="mx-auto w-10/12 space-y-10 ">
               <h1 class="font-bold text-xl mt-10 ">Trending Pet Products</h1>
           
               <div class="lg:flex gap-10">
@@ -172,14 +174,14 @@
            <p class="text-gray-600">Discover a world of treats, toys, and<br>essentials handpicked for </p>
                 <button class="bg-white text-black p-2 p-3">Shop Now</button>
                   <div class="w-[200px]">
-                    <img class="-mt-20 ml-40" src="c1-assets/cute-pet-mid.png"/>
+                    <img class="lg:-mt-12 ml-20" src="c1-assets/cute-pet-mid.png"/>
                   </div>
               </div>
             </div>
 
-            <div class="lg:grid grid-cols-3 sm:grid grid-cols-2 gap-5">
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">
            <!-- card1 -->
-           <div class="flex gap-2">
+           <div class="flex gap-2 border border-slate-300 rounded-lg shadow-xl p-2s p-3 lg:w-[200px]">
             <div>
               <img class="rounded-lg p-2 bg-pink-200" src="c1-assets/dog-cartoon.png">
             </div>
@@ -191,7 +193,7 @@
             </div>
 
             <!-- card2 -->
-           <div class="flex gap-2">
+           <div class="flex gap-2 border border-slate-300 rounded-lg shadow-xl p-2s p-3 lg:w-[200px]">
             <div>
               <img class="rounded-lg p-2 bg-pink-200" src="c1-assets/fish-cartoon.png">
             </div>
@@ -202,7 +204,7 @@
             </div>
             </div>
             <!-- card3 -->
-           <div class="flex gap-2">
+           <div class="flex gap-2 border border-slate-300 rounded-lg shadow-xl p-2s p-3 lg:w-[200px]">
             <div>
               <img class="rounded-lg p-2 bg-pink-200" src="c1-assets/bird-cartoon.png">
             </div>
@@ -213,7 +215,7 @@
             </div>
             </div>
             <!-- card4 -->
-           <div class="flex gap-2">
+           <div class="flex gap-2 border border-slate-300 rounded-lg shadow-xl p-2s p-3 lg:w-[200px]">
             <div>
               <img class="rounded-lg p-2 bg-pink-200" src="c1-assets/cat-cartoon.png">
             </div>
@@ -224,7 +226,7 @@
             </div>
             </div>
             <!-- card5 -->
-           <div class="flex gap-2">
+           <div class="flex gap-2 border border-slate-300 rounded-lg shadow-xl p-2s p-3 lg:w-[200px]">
             <div>
               <img class="rounded-lg p-2 bg-pink-200" src="c1-assets/rabbit-cartoon.png">
             </div>
@@ -235,7 +237,7 @@
             </div>
             </div>
             <!-- card6 -->
-           <div class="flex gap-2">
+           <div class="flex gap-2 border border-slate-300 rounded-lg shadow-xl p-2s p-3 lg:w-[200px]">
             <div>
               <img class="rounded-lg p-2 bg-pink-200" src="c1-assets/mouse-cartoon.png">
             </div>
@@ -246,7 +248,7 @@
             </div>
             </div>
             <!-- card7 -->
-           <div class="flex gap-2">
+           <div class="flex gap-2 border border-slate-300 rounded-lg shadow-xl p-2s p-3 lg:w-[200px]">
             <div>
               <img class="rounded-lg p-2 bg-pink-200" src="c1-assets/pet-couch.png">
             </div>
@@ -257,7 +259,7 @@
             </div>
             </div>
             <!-- card8 -->
-           <div class="flex gap-2">
+           <div class="flex gap-2 border border-slate-300 rounded-lg shadow-xl p-2s p-3 lg:w-[200px]">
             <div>
               <img class="rounded-lg p-2 bg-pink-200" src="c1-assets/fish-cartoon.png">
             </div>
@@ -268,7 +270,7 @@
             </div>
             </div>
             <!-- card9 -->
-           <div class="flex gap-2">
+           <div class="flex gap-2 border border-slate-300 rounded-lg shadow-xl p-2s p-3 lg:w-[200px]">
             <div>
               <img class="rounded-lg p-2 bg-pink-200" src="c1-assets/bird-cartoon.png">
             </div>
@@ -284,12 +286,84 @@
             </div>
           </section>
 
+             <!-- everyday price -->
 
-      </main>   
+  <section class="mx-auto w-10/12">
 
+    <h1 class="font-bold text-black text-xl mt-10 mb-10">Everyday low Price</h1>
+<div class="lg:flex gap-5">
 
+    <div class="flex rounded-lg lg:w-[665px] h-[400px] bg-gradient-to-r from-blue-100 to-blue-300">
+    <div class="flex flex-col justify-center p-2">
+    <p class="">Under Price</p>
+    <h1 class="text-black font-bold">Pet Grooming Mitt</h1>
+    <p class="text-gray-400">(Easy Hair Removal)</p>
+    <h1 class="text-black font-bold text-xl">$7.99</h1>
+    </div>
+    <div>
+      <img class="w-[400px] h-[400px]" src="c1-assets/cute-dog-mid.png">
+    </div>
+    </div>
 
+    <div class="lg:w-[430px] rounded-lg p-3 bg-gradient-to-r from-yellow-100 to-yellow-300">
+      <h1 class="font-bold text-black">T-Shirt for Dogs</h1>
+      <p class="text-yellow-500 font-bold text-xl">$7.99</p>
+      <img class="w-[200px] h-[300px] -mt-10 ml-20" src="c1-assets/cute-pet-mid.png">
+    </div>
+    </div>
+    </section>  
+               
+                <!-- relative card-->
+        <section class="mx-auto w-10/12 bg-pink-100 my-10">
+          <div>
+          <div class="lg:flex gap-10">
+          <div>
+            <img class="p-5" src="c1-assets/cute-pet-mid.png">
+          </div>
+          <div class="p-5 space-y-5 text-center lg:text-start ">
+            <h1 class="font-bold text-black text-5xl">Get Pawsome News!</h1>
+            <p class="text-black ">Exclusive training tips, ticks, product deals and more.</p>
+            <input class="p- p-3 rounded-lg lg:w-[350px]" type="text" placeholder="Enter email"><br>
+            <button class="bg-yellow-400 rounded-lg p-2 p-3 text-black" >Subscribe</button>
+          </div>
 
-    
+          </div>
+
+        </section>       
+      </main> 
+                  <!-- footer -->
+        <footer class="bg-yellow-200 h-[600px]">
+          <!-- <section class="mx-auto w-10/12 lg:flex gap-80">
+          <div>
+            <div class="flex mt-10">
+            <img src="c1-assets/logo-footer.png">
+            <h1 class="font-bold">Browse Pets</h1>
+            </div>
+            <p>Discover a world of treats, toys, and<br> essentials handpicked for your furry<br> friends</p>
+          </div>
+
+          <div>
+            <ul class="space-y-2 mt-10">
+              <li><a href="">Find a pet</a></li>
+              <li><a href="">Breeds</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="mt-20">
+            <h1>Follow us</h1>
+            <div class="flex gap-3">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+
+          </div>
+
+         </section>
+        </footer>           
+       -->
+      
 </body>
 </html>
