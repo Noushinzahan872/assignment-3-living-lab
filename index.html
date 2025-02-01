@@ -45,11 +45,11 @@
 
 <body class="font-poppins">
   <header>
-    <nav class="bg-pink-100">
+    <nav class="bg-pink-100 border-b-2 lg:border-hidden">
       <div class="navbar">
       <div class="flex gap-2">
         <img class="mr-50" src="c1-assets/logo-header.png" alt="">
-        <h1 class="sm:hidden">Browse Pets</h1>
+        <h1 class="sm:hidden lg:block">Browse Pets</h1>
         </div>
         <div class="sm:hidden lg:flex">
           <ul class="flex gap-4">
@@ -73,11 +73,11 @@
 <div class="mx-auto w-10/12">
      
     <div class="lg:absolute sm:mt-50">
-      <h1 class="text-5xl font-bold mt-10 mb-5">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h1>
+      <h1 class="text-5xl font-bold animate-bounce mt-10 mb-5">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h1>
       <p class="text-gray-500 mb-5">Discover a world of treats, toys, and essentials handpicked for<br> your furry friends. Shop now and make tails wag with joy!</p>
       <button class="bg-yellow-400 rounded-lg p-2 p-3 text-black">Find a pet</button>
     </div>
-      <div class="w-[full] sm:mt-50">
+      <div class="w-[full] -mt-2 lg:-mt-1">
         <img src="c1-assets/cat-big.png">
       </div>
 </div>
@@ -86,7 +86,7 @@
       <main>
       <section class="mx-auto w-10/12">
         <h1 class="font-bold text-xl mt-10 mb-5">Browse By Categories</h1>
-        <div class="grid grid-cols-1 lg:flex gap-5">
+        <div class="grid grid-cols-2 lg:flex gap-5">
                   <!-- card-1 -->
             <div class=" bg-yellow-200 rounded-lg p-8 text-center">
               <div class="avatar">
@@ -159,16 +159,54 @@
           </div>
           </div>
         </section>
-                       
-         <!-- products -->
+
+              <!-- new section -->
+
+             <section class="mx-auto w-10/12" >
+              <h1 class="font-bold text-2xl mt-10 text-black">Choose your pet</h1>
+
+              <div class="grid grid cols-1 space-y-2 lg:flex">
+             <div class="card bg-base-100 w-95 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title">Pets!</h2>
+                <p>The cat is a small pet animal.</p>
+              </div>
+              <figure>
+                <img class="w-[340px] h-[400px] rounded-lg" src="pic/cat.jpg"/>
+              </figure>
+            </div>
+
+            <div class="card bg-base-100 w-96 shadow-xl animate-pulse">
+              <div class="card-body">
+                <h2 class="card-title">Pets!</h2>
+                <p>The cat is a small pet animal.</p>
+              </div>
+              <figure>
+                <img class="w-[340px] h-[400px] rounded-lg" src="pic/cat1.jpg"/>
+              </figure>
+            </div>
+
+            <div class="card bg-base-100 w-95 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title">Pets!</h2>
+                <p>The dog is a pet animal.</p>
+              </div>
+              <figure>
+                <img class="w-[340px] h-[400px] rounded-lg" src="pic/dog1.png"/>
+              </figure>
+            </div>
+</div>
+          </section>           
+
+                    <!-- products -->
             
           <section class ="lg:bg-pink-100 mt-10 lg:h-[500px]">
             <div class="mx-auto w-10/12 space-y-10 ">
-              <h1 class="font-bold text-xl mt-10 ">Trending Pet Products</h1>
+              <h1 class="font-bold text-xl mt-20 text-black p-2">Trending Pet Products</h1>
           
               <div class="lg:flex gap-10">
               
-             <div class=" bg-yellow-200 rounded-lg lg:w-4/12">
+             <div class=" bg-yellow-200 rounded-lg lg:w-4/12 ">
               <div class="space-y-2 p-2">
                 <h1 class="font-bold text-black">T- Shirt For Dogs</h1>
            <p class="text-gray-600">Discover a world of treats, toys, and<br>essentials handpicked for </p>
@@ -281,12 +319,23 @@
             </div>
             </div>
 
+            <div class="flex gap-2 border border-slate-300 rounded-lg lg:hidden shadow-xl p-2s p-3 lg:w-[200px]">
+              <div>
+                <img class="rounded-lg p-2 bg-pink-200" src="c1-assets/bird-cartoon.png">
+              </div>
+              <div>
+                <p><i class="fa-regular fa-star text-orange-500"></i>4.5</p>
+                <h1 class="font-bold text-black">Pet Bed</h1>
+                <p>$39.99</p>
+              </div>
+              </div>
+
             </div>
           </div>
             </div>
           </section>
 
-             <!-- everyday price -->
+                   <!-- everyday price -->
 
   <section class="mx-auto w-10/12">
 
@@ -294,10 +343,10 @@
 <div class="lg:flex gap-5">
 
     <div class="flex rounded-lg lg:w-[665px] h-[400px] bg-gradient-to-r from-blue-100 to-blue-300">
-    <div class="flex flex-col justify-center p-2">
-    <p class="">Under Price</p>
-    <h1 class="text-black font-bold">Pet Grooming Mitt</h1>
-    <p class="text-gray-400">(Easy Hair Removal)</p>
+    <div class="lg:flex lg:flex-col lg:justify-center p-3">
+    <p class="hidden lg:block">Under Price</p>
+    <h1 class="text-black font-bold ">Pet Grooming Mitt</h1>
+    <p class="text-gray-400 hidden lg:block">(Easy Hair Removal)</p>
     <h1 class="text-black font-bold text-xl">$7.99</h1>
     </div>
     <div>
@@ -311,29 +360,38 @@
       <img class="w-[200px] h-[300px] -mt-10 ml-20" src="c1-assets/cute-pet-mid.png">
     </div>
     </div>
-    </section>  
-               
-                <!-- relative card-->
-        <section class="mx-auto w-10/12 bg-pink-100 my-10">
-          <div>
-          <div class="lg:flex gap-10">
-          <div>
-            <img class="p-5" src="c1-assets/cute-pet-mid.png">
-          </div>
-          <div class="p-5 space-y-5 text-center lg:text-start ">
-            <h1 class="font-bold text-black text-5xl">Get Pawsome News!</h1>
-            <p class="text-black ">Exclusive training tips, ticks, product deals and more.</p>
-            <input class="p- p-3 rounded-lg lg:w-[350px]" type="text" placeholder="Enter email"><br>
-            <button class="bg-yellow-400 rounded-lg p-2 p-3 text-black" >Subscribe</button>
-          </div>
-
-          </div>
-
-        </section>       
-      </main> 
+    </section>
+                    
+</main>
+        
                   <!-- footer -->
-        <footer class="bg-yellow-200 h-[600px]">
-          <!-- <section class="mx-auto w-10/12 lg:flex gap-80">
+
+        <footer class="bg-yellow-200 h-[300px] relative mt-56 flex justify-center">
+          
+    <section class="mb-20 absolute -top-44 w-full">
+      <div class="mx-auto lg:w-10/12 lg:h-[400px] bg-pink-100 ">
+  
+        <div class="lg:flex gap-10">
+        <div>
+          <img class="p-5" src="c1-assets/cute-pet-mid.png">
+        </div>
+        <div class="p-5 space-y-5 text-center lg:text-start ">
+          <h1 class="font-bold text-black text-2xl lg:5xl">Get Pawsome News!</h1>
+          <p class="text-black ">Exclusive training tips, ticks, product deals and more.</p>
+          <input class="p- p-3 rounded-lg lg:w-[350px]" type="text" placeholder="Enter email"><br>
+          <button class="bg-yellow-400 rounded-lg p-2 p-3 text-black" >Subscribe</button>
+        </div>
+
+        </div>
+
+      </div> 
+    </section> 
+    </footer>
+
+    <section class="bg-yellow-200 w-full h-60 md:h-0">
+    </section>
+
+         <section class=" px-10 lg:px-28 py-2 lg:flex gap-80 bg-yellow-200 h-100vh z-20  mt-50">
           <div>
             <div class="flex mt-10">
             <img src="c1-assets/logo-footer.png">
@@ -341,7 +399,7 @@
             </div>
             <p>Discover a world of treats, toys, and<br> essentials handpicked for your furry<br> friends</p>
           </div>
-
+  
           <div>
             <ul class="space-y-2 mt-10">
               <li><a href="">Find a pet</a></li>
@@ -349,7 +407,7 @@
               <li><a href="">Contact us</a></li>
             </ul>
           </div>
-
+  
           <div class="mt-20">
             <h1>Follow us</h1>
             <div class="flex gap-3">
@@ -358,12 +416,11 @@
               <i class="fa-brands fa-linkedin"></i>
               <i class="fa-brands fa-youtube"></i>
             </div>
-
+  
           </div>
-
-         </section>
-        </footer>           
-       -->
+  
+         </section> 
+                    
       
 </body>
 </html>
